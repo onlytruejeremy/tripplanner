@@ -1,0 +1,63 @@
+.image__container {
+  position: relative;
+  margin: auto;
+  height: 50vh;
+  max-height: 500px;
+  max-width: 800px;
+}
+
+.left__image,
+.right__image {
+  margin: auto;
+  height: 80%;
+  width: 80%;
+  min-width: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  object-position: bottom;
+  box-shadow: 0 0px 0.7px rgba(0, 0, 0, 0.042), 0 0px 1.6px rgba(0, 0, 0, 0.061),
+    0 0px 3px rgba(0, 0, 0, 0.075), 0 0px 5.4px rgba(0, 0, 0, 0.089),
+    0 0px 10px rgba(0, 0, 0, 0.108), 0 0px 24px rgba(0, 0, 0, 0.15);
+}
+
+.left__image {
+  position: absolute;
+  top: 0;
+  left: -20%;
+}
+
+.right__image {
+  position: absolute;
+  bottom: 0;
+  right: -20%;
+}
+
+.image__bar {
+  margin: auto;
+}
+.image__bar img {
+  margin: auto;
+  width: 25%;
+  max-width: 100px;
+  max-height: 150px;
+  clip-path: circle(45px at center);
+  box-shadow: 0 0px 0.7px rgba(0, 0, 0, 0.042), 0 0px 1.6px rgba(0, 0, 0, 0.061),
+    0 0px 3px rgba(0, 0, 0, 0.075), 0 0px 5.4px rgba(0, 0, 0, 0.089),
+    0 0px 10px rgba(0, 0, 0, 0.108), 0 0px 24px rgba(0, 0, 0, 0.15);
+}
+
+.tech__col {
+  max-height: 150px;
+}
+.home__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 2rem;
+}
+@media screen and (max-width: 800px) {
+  .left__image,
+  .right__image {
+    height: 80%;
+    width: 80%;
+  }
+}
